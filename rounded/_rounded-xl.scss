@@ -1,0 +1,9 @@
+@mixin rounded-xl {
+  &_rounded-xl {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="xl"]) {
+    @content;
+  }
+}

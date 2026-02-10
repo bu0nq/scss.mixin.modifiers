@@ -1,0 +1,9 @@
+@mixin rounded-sm {
+  &_rounded-sm {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="sm"]) {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin rounded-md {
+  &_rounded-md {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="md"]) {
+    @content;
+  }
+}

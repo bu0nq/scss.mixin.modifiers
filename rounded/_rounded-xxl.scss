@@ -1,0 +1,9 @@
+@mixin rounded-xxl {
+  &_rounded-xxl {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="xxl"]) {
+    @content;
+  }
+}

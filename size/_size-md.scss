@@ -1,0 +1,9 @@
+@mixin size-md {
+  &_size-md {
+    @content;
+  }
+
+  &:is([data-modifier-size="md"]) {
+    @content;
+  }
+}

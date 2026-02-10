@@ -1,0 +1,9 @@
+@mixin size-xxl {
+  &_size-xxl {
+    @content;
+  }
+
+  &:is([data-modifier-size="xxl"]) {
+    @content;
+  }
+}

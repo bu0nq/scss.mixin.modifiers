@@ -1,0 +1,9 @@
+@mixin rounded-lg {
+  &_rounded-lg {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="lg"]) {
+    @content;
+  }
+}

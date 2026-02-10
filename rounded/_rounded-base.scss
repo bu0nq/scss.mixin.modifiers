@@ -1,0 +1,9 @@
+@mixin rounded-base {
+  &_rounded-base {
+    @content;
+  }
+
+  &:is([data-modifier-rounded="base"]) {
+    @content;
+  }
+}

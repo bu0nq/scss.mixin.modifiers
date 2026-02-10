@@ -1,0 +1,9 @@
+@mixin size-xl {
+  &_size-xl {
+    @content;
+  }
+
+  &:is([data-modifier-size="xl"]) {
+    @content;
+  }
+}

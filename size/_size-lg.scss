@@ -1,0 +1,9 @@
+@mixin size-lg {
+  &_size-lg {
+    @content;
+  }
+
+  &:is([data-modifier-size="lg"]) {
+    @content;
+  }
+}

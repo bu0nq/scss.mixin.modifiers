@@ -1,0 +1,30 @@
+{
+  "name": "@bu0nq/scss.mixin.modifiers",
+  "version": "0.1.0",
+  "description": "Package for integrating SCSS.Mixin.Modifiers",
+  "main": "modifiers.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bu0nq/scss.mixin.modifiers.git"
+  },
+  "keywords": [
+    "scss",
+    "mixins",
+    "modifiers"
+  ],
+  "author": {
+    "name": "bu0nq",
+    "email": "hello@bu0nq.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bu0nq/scss.mixin.modifiers/issues"
+  },
+  "homepage": "https://github.com/bu0nq/scss.mixin.modifiers#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

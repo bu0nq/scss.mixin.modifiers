@@ -1,0 +1,9 @@
+@mixin size-xs {
+  &_size-xs {
+    @content;
+  }
+
+  &:is([data-modifier-size="xs"]) {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin size-sm {
+  &_size-sm {
+    @content;
+  }
+
+  &:is([data-modifier-size="sm"]) {
+    @content;
+  }
+}

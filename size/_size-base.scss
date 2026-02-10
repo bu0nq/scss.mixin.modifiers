@@ -1,0 +1,9 @@
+@mixin size-base {
+  &_size-base {
+    @content;
+  }
+
+  &:is([data-modifier-size="base"]) {
+    @content;
+  }
+}
