@@ -1,9 +1,11 @@
-@mixin rounded-xxl {
+@mixin rounded-xxl($hasModifier: false) {
   &_rounded-xxl {
     @content;
   }
 
-  &:is([data-modifier-rounded="xxl"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-rounded="xxl"]) {
+      @content;
+    }
   }
 }
