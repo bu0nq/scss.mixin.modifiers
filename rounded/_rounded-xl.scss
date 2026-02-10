@@ -1,9 +1,11 @@
-@mixin rounded-xl {
+@mixin rounded-xl($hasModifier: false) {
   &_rounded-xl {
     @content;
   }
 
-  &:is([data-modifier-rounded="xl"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-rounded="xl"]) {
+      @content;
+    }
   }
 }

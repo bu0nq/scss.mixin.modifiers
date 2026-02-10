@@ -1,9 +1,11 @@
-@mixin rounded-md {
+@mixin rounded-md($hasModifier: false) {
   &_rounded-md {
     @content;
   }
 
-  &:is([data-modifier-rounded="md"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-rounded="md"]) {
+      @content;
+    }
   }
 }
