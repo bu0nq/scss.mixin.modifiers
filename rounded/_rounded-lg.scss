@@ -1,9 +1,11 @@
-@mixin rounded-lg {
+@mixin rounded-lg($hasModifier: false) {
   &_rounded-lg {
     @content;
   }
 
-  &:is([data-modifier-rounded="lg"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-rounded="lg"]) {
+      @content;
+    }
   }
 }

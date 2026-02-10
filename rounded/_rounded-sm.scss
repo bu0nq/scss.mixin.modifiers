@@ -1,9 +1,11 @@
-@mixin rounded-sm {
+@mixin rounded-sm($hasModifier: false) {
   &_rounded-sm {
     @content;
   }
 
-  &:is([data-modifier-rounded="sm"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-rounded="sm"]) {
+      @content;
+    }
   }
 }

@@ -1,9 +1,11 @@
-@mixin size-md {
+@mixin size-md($hasModifier: false) {
   &_size-md {
     @content;
   }
 
-  &:is([data-modifier-size="md"]) {
-    @content;
+  @if $hasModifier {
+    &:is([data-modifier-size="md"]) {
+      @content;
+    }
   }
 }
