@@ -1,9 +1,11 @@
-@mixin size-sm($hasModifier: false) {
+@use "../variables";
+
+@mixin size-sm($is-data-modifier: variables.$is-data-modifier) {
   &_size-sm {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-size="sm"]) {
       @content;
     }
