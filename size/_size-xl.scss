@@ -1,9 +1,11 @@
-@mixin size-xl($hasModifier: false) {
+@use "../variables";
+
+@mixin size-xl($is-data-modifier: variables.$is-data-modifier) {
   &_size-xl {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-size="xl"]) {
       @content;
     }

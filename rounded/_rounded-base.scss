@@ -1,9 +1,11 @@
-@mixin rounded-base($hasModifier: false) {
+@use "../variables";
+
+@mixin rounded-base($is-data-modifier: variables.$is-data-modifier) {
   &_rounded-base {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-rounded="base"]) {
       @content;
     }

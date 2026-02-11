@@ -1,9 +1,11 @@
-@mixin rounded-xs($hasModifier: false) {
+@use "../variables";
+
+@mixin rounded-xs($is-data-modifier: variables.$is-data-modifier) {
   &_rounded-xs {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-rounded="xs"]) {
       @content;
     }

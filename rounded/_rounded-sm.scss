@@ -1,9 +1,11 @@
-@mixin rounded-sm($hasModifier: false) {
+@use "../variables";
+
+@mixin rounded-sm($is-data-modifier: variables.$is-data-modifier) {
   &_rounded-sm {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-rounded="sm"]) {
       @content;
     }

@@ -1,9 +1,11 @@
-@mixin size-lg($hasModifier: false) {
+@use "../variables";
+
+@mixin size-lg($is-data-modifier: variables.$is-data-modifier) {
   &_size-lg {
     @content;
   }
 
-  @if $hasModifier {
+  @if $is-data-modifier {
     &:is([data-modifier-size="lg"]) {
       @content;
     }
