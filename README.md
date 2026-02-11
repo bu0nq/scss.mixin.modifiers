@@ -62,7 +62,6 @@ or
 
 ### Rounded
 
-
 | Name         | BEM Modifier  | Data Modifier (Optional)     |
 |--------------|---------------|------------------------------|
 | rounded-xs   | _rounded-xs   | data-modifier-rounded="xs"   |
