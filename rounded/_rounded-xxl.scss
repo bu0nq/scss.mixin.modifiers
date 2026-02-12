@@ -2,14 +2,26 @@
 
 @mixin rounded-xxl($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-xxl {
+    @include class-rounded-xxl {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="xxl"]) {
+    @include data-rounded-xxl {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-xxl {
+  &_rounded-xxl {
+    @content;
+  }
+}
+
+@mixin data-rounded-xxl {
+  &:is([data-modifier-rounded="xxl"]) {
+    @content;
   }
 }

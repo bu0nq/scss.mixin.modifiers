@@ -70,17 +70,17 @@ or
 
 Modifiers for changing the rounding of a block or element.
 
-| Mixin Name   | BEM Modifier  | Data Modifier (Optional)     |
-|--------------|---------------|------------------------------|
-| rounded-auto | _rounded-auto | data-modifier-rounded="auto" |
-| rounded-none | _rounded-none | data-modifier-rounded="none" |
-| rounded-xs   | _rounded-xs   | data-modifier-rounded="xs"   |
-| rounded-sm   | _rounded-sm   | data-modifier-rounded="sm"   |
-| rounded-md   | _rounded-md   | data-modifier-rounded="md"   |
-| rounded-base | _rounded-base | data-modifier-rounded="base" |
-| rounded-lg   | _rounded-lg   | data-modifier-rounded="lg"   |
-| rounded-xl   | _rounded-xl   | data-modifier-rounded="xl"   |
-| rounded-xxl  | _rounded-xxl  | data-modifier-rounded="xxl"  |
+| Mixin Name   | Additional mixins                        | BEM Modifier  | Data Modifier (Optional)      |
+|--------------|------------------------------------------|---------------|-------------------------------|
+| rounded-auto | class-rounded-auto<br/>data-rounded-auto | _rounded-auto | data-modifier-rounded="auto"  |
+| rounded-none | class-rounded-none<br/>data-rounded-none | _rounded-none | data-modifier-rounded="none"  |
+| rounded-xs   | class-rounded-xs <br/>data-rounded-xs    | _rounded-xs   | data-modifier-rounded="xs"    |
+| rounded-sm   | class-rounded-sm<br/>data-rounded-sm     | _rounded-sm   | data-modifier-rounded="sm"    |
+| rounded-md   | class-rounded-md<br/>data-rounded-md     | _rounded-md   | data-modifier-rounded="md"    |
+| rounded-base | class-rounded-base<br/>data-rounded-base | _rounded-base | data-modifier-rounded="base"  |
+| rounded-lg   | class-rounded-lg<br/>data-rounded-lg     | _rounded-lg   | data-modifier-rounded="lg"    |
+| rounded-xl   | class-rounded-xl<br/>data-rounded-xl     | _rounded-xl   | data-modifier-rounded="xl"    |
+| rounded-xxl  | class-rounded-xxl<br/>data-rounded-xxl   | _rounded-xxl  | data-modifier-rounded="xxl"   |
 
 ### Size
 

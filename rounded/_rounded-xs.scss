@@ -2,14 +2,26 @@
 
 @mixin rounded-xs($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-xs {
+    @include class-rounded-xs {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="xs"]) {
+    @include data-rounded-xs {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-xs {
+  &_rounded-xs {
+    @content;
+  }
+}
+
+@mixin data-rounded-xs {
+  &:is([data-modifier-rounded="xs"]) {
+    @content;
   }
 }
