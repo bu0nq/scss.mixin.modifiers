@@ -62,8 +62,12 @@ or
 
 ### Rounded
 
+Modifiers for changing the rounding of a block or element.
+
 | Name         | BEM Modifier  | Data Modifier (Optional)     |
 |--------------|---------------|------------------------------|
+| rounded-auto | _rounded-auto | data-modifier-rounded="auto" |
+| rounded-none | _rounded-none | data-modifier-rounded="none" |
 | rounded-xs   | _rounded-xs   | data-modifier-rounded="xs"   |
 | rounded-sm   | _rounded-sm   | data-modifier-rounded="sm"   |
 | rounded-md   | _rounded-md   | data-modifier-rounded="md"   |
@@ -73,6 +77,8 @@ or
 | rounded-xxl  | _rounded-xxl  | data-modifier-rounded="xxl"  |
 
 ### Size
+
+Modifiers for changing the size of a block or element.
 
 | Name      | BEM Modifier | Data Modifier (Optional)  |
 |-----------|--------------|---------------------------|
@@ -85,6 +91,8 @@ or
 | size-xxl  | _size-xxl    | data-modifier-size="xxl"  |
 
 ### State
+
+Modifiers for changing the state of a block or element.
 
 | Name       | BEM Modifier |
 |------------|--------------|

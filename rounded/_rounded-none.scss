@@ -1,0 +1,13 @@
+@use "../variables";
+
+@mixin rounded-none($is-data-modifier: variables.$is-data-modifier) {
+  &_rounded-none {
+    @content;
+  }
+
+  @if $is-data-modifier {
+    &:is([data-modifier-rounded="none"]) {
+      @content;
+    }
+  }
+}
