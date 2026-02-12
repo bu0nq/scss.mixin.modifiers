@@ -1,8 +1,10 @@
 @use "../variables";
 
-@mixin rounded-xxl($is-data-modifier: variables.$is-data-modifier-rounded) {
-  &_rounded-xxl {
-    @content;
+@mixin rounded-xxl($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
+  @if $is-class-modifier {
+    &_rounded-xxl {
+      @content;
+    }
   }
 
   @if $is-data-modifier {

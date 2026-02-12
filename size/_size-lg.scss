@@ -1,8 +1,10 @@
 @use "../variables";
 
-@mixin size-lg($is-data-modifier: variables.$is-data-modifier-size) {
-  &_size-lg {
-    @content;
+@mixin size-lg($is-class-modifier: variables.$is-class-modifier-size, $is-data-modifier: variables.$is-data-modifier-size) {
+  @if $is-class-modifier {
+    &_size-lg {
+      @content;
+    }
   }
 
   @if $is-data-modifier {

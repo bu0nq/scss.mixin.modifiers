@@ -24,6 +24,10 @@ or
 
 ```scss
 @use "@bu0nq/scss.mixin.modifiers/variables" with (
+  $is-modifier: true,
+  $is-class-modifier: true,
+  $is-class-modifier-rounded: true,
+  $is-class-modifier-size: true,
   $is-data-modifier: true,
   $is-data-modifier-rounded: true,
   $is-data-modifier-size: true

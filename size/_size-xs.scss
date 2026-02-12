@@ -1,8 +1,10 @@
 @use "../variables";
 
-@mixin size-xs($is-data-modifier: variables.$is-data-modifier-size) {
-  &_size-xs {
-    @content;
+@mixin size-xs($is-class-modifier: variables.$is-class-modifier-size, $is-data-modifier: variables.$is-data-modifier-size) {
+  @if $is-class-modifier {
+    &_size-xs {
+      @content;
+    }
   }
 
   @if $is-data-modifier {

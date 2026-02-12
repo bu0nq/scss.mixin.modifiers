@@ -1,3 +1,12 @@
-$is-data-modifier: false !default;
+// Global variable for displaying modifiers
+$is-modifier: true !default;
+
+// Variable for displaying modifier classes
+$is-class-modifier: $is-modifier !default;
+$is-class-modifier-rounded: $is-class-modifier !default;
+$is-class-modifier-size: $is-class-modifier !default;
+
+// Variable for displaying modifier attributes
+$is-data-modifier: $is-modifier !default;
 $is-data-modifier-rounded: $is-data-modifier !default;
 $is-data-modifier-size: $is-data-modifier !default;
