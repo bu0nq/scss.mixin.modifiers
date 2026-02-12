@@ -66,7 +66,7 @@ or
 
 Modifiers for changing the rounding of a block or element.
 
-| Name         | BEM Modifier  | Data Modifier (Optional)     |
+| Mixin Name   | BEM Modifier  | Data Modifier (Optional)     |
 |--------------|---------------|------------------------------|
 | rounded-auto | _rounded-auto | data-modifier-rounded="auto" |
 | rounded-none | _rounded-none | data-modifier-rounded="none" |
@@ -82,21 +82,21 @@ Modifiers for changing the rounding of a block or element.
 
 Modifiers for changing the size of a block or element.
 
-| Name      | BEM Modifier | Data Modifier (Optional)  |
-|-----------|--------------|---------------------------|
-| size-xs   | _size-xs     | data-modifier-size="xs"   |
-| size-sm   | _size-sm     | data-modifier-size="sm"   |
-| size-md   | _size-md     | data-modifier-size="md"   |
-| size-base | _size-base   | data-modifier-size="base" |
-| size-lg   | _size-lg     | data-modifier-size="lg"   |
-| size-xl   | _size-xl     | data-modifier-size="xl"   |
-| size-xxl  | _size-xxl    | data-modifier-size="xxl"  |
+| Mixin Name | BEM Modifier | Data Modifier (Optional)  |
+|------------|--------------|---------------------------|
+| size-xs    | _size-xs     | data-modifier-size="xs"   |
+| size-sm    | _size-sm     | data-modifier-size="sm"   |
+| size-md    | _size-md     | data-modifier-size="md"   |
+| size-base  | _size-base   | data-modifier-size="base" |
+| size-lg    | _size-lg     | data-modifier-size="lg"   |
+| size-xl    | _size-xl     | data-modifier-size="xl"   |
+| size-xxl   | _size-xxl    | data-modifier-size="xxl"  |
 
 ### State
 
 Modifiers for changing the state of a block or element.
 
-| Name        | BEM Modifier |
+| Mixin Name  | BEM Modifier |
 |-------------|--------------|
 | is-active   | _is-active   |
 | is-current  | _is-current  |
