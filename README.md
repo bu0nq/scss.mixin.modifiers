@@ -83,3 +83,14 @@ or
 | size-lg   | _size-lg     | data-modifier-size="lg"   |
 | size-xl   | _size-xl     | data-modifier-size="xl"   |
 | size-xxl  | _size-xxl    | data-modifier-size="xxl"  |
+
+### State
+
+| Name       | BEM Modifier |
+|------------|--------------|
+| is-active  | _is-active   |
+| is-current | _is-current  |
+| is-hidden  | _is-hidden   |
+| is-hide    | _is-hide     |
+| is-invalid | _is-invalid  |
+| is-open    | _is-open     |
