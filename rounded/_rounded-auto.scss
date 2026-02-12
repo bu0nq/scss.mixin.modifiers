@@ -1,0 +1,15 @@
+@use "../variables";
+
+@mixin rounded-auto($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
+  @if $is-class-modifier {
+    &_rounded-auto {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    &:is([data-modifier-rounded="auto"]) {
+      @content;
+    }
+  }
+}
