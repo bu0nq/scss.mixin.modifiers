@@ -94,11 +94,12 @@ Modifiers for changing the size of a block or element.
 
 Modifiers for changing the state of a block or element.
 
-| Name       | BEM Modifier |
-|------------|--------------|
-| is-active  | _is-active   |
-| is-current | _is-current  |
-| is-hidden  | _is-hidden   |
-| is-hide    | _is-hide     |
-| is-invalid | _is-invalid  |
-| is-open    | _is-open     |
+| Name        | BEM Modifier |
+|-------------|--------------|
+| is-active   | _is-active   |
+| is-current  | _is-current  |
+| is-disabled | _is-disabled |
+| is-hidden   | _is-hidden   |
+| is-hide     | _is-hide     |
+| is-invalid  | _is-invalid  |
+| is-open     | _is-open     |
