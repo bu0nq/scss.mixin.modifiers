@@ -1,0 +1,5 @@
+@mixin is-disabled {
+  &_is-disabled {
+    @content;
+  }
+}

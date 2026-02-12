@@ -1,8 +1,10 @@
 @use "../variables";
 
-@mixin rounded-sm($is-data-modifier: variables.$is-data-modifier) {
-  &_rounded-sm {
-    @content;
+@mixin rounded-sm($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
+  @if $is-class-modifier {
+    &_rounded-sm {
+      @content;
+    }
   }
 
   @if $is-data-modifier {
