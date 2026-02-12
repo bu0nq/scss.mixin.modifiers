@@ -1,0 +1,5 @@
+@mixin is-current {
+  &_is-current {
+    @content;
+  }
+}
