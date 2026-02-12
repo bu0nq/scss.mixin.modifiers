@@ -1,6 +1,6 @@
 @use "../variables";
 
-@mixin size-base($is-data-modifier: variables.$is-data-modifier) {
+@mixin size-base($is-data-modifier: variables.$is-data-modifier-size) {
   &_size-base {
     @content;
   }

@@ -1,6 +1,6 @@
 @use "../variables";
 
-@mixin rounded-auto($is-data-modifier: variables.$is-data-modifier) {
+@mixin rounded-auto($is-data-modifier: variables.$is-data-modifier-rounded) {
   &_rounded-auto {
     @content;
   }

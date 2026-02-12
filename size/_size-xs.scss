@@ -1,6 +1,6 @@
 @use "../variables";
 
-@mixin size-xs($is-data-modifier: variables.$is-data-modifier) {
+@mixin size-xs($is-data-modifier: variables.$is-data-modifier-size) {
   &_size-xs {
     @content;
   }
