@@ -74,7 +74,7 @@ Modifiers for changing the rounding of a block or element.
 |--------------|------------------------------------------|----------------|-------------------------------|
 | rounded-auto | class-rounded-auto<br/>data-rounded-auto | _rounded-auto  | data-modifier-rounded="auto"  |
 | rounded-none | class-rounded-none<br/>data-rounded-none | _rounded-none  | data-modifier-rounded="none"  |
-| rounded-xs   | class-rounded-xs <br/>data-rounded-xs    | _rounded-xs    | data-modifier-rounded="xs"    |
+| rounded-xs   | class-rounded-xs<br/>data-rounded-xs     | _rounded-xs    | data-modifier-rounded="xs"    |
 | rounded-sm   | class-rounded-sm<br/>data-rounded-sm     | _rounded-sm    | data-modifier-rounded="sm"    |
 | rounded-md   | class-rounded-md<br/>data-rounded-md     | _rounded-md    | data-modifier-rounded="md"    |
 | rounded-base | class-rounded-base<br/>data-rounded-base | _rounded-base  | data-modifier-rounded="base"  |
@@ -86,15 +86,15 @@ Modifiers for changing the rounding of a block or element.
 
 Modifiers for changing the size of a block or element.
 
-| Mixin Name | Class Modifier | Data Modifier (Optional)  |
-|------------|----------------|---------------------------|
-| size-xs    | _size-xs       | data-modifier-size="xs"   |
-| size-sm    | _size-sm       | data-modifier-size="sm"   |
-| size-md    | _size-md       | data-modifier-size="md"   |
-| size-base  | _size-base     | data-modifier-size="base" |
-| size-lg    | _size-lg       | data-modifier-size="lg"   |
-| size-xl    | _size-xl       | data-modifier-size="xl"   |
-| size-xxl   | _size-xxl      | data-modifier-size="xxl"  |
+| Mixin Name | Additional mixins                  | Class Modifier | Data Modifier (Optional)  |
+|------------|------------------------------------|----------------|---------------------------|
+| size-xs    | class-size-xs<br/>data-size-xs     | _size-xs       | data-modifier-size="xs"   |
+| size-sm    | class-size-sm<br/>data-size-sm     | _size-sm       | data-modifier-size="sm"   |
+| size-md    | class-size-md<br/>data-size-md     | _size-md       | data-modifier-size="md"   |
+| size-base  | class-size-base<br/>data-size-base | _size-base     | data-modifier-size="base" |
+| size-lg    | class-size-lg<br/>data-size-lg     | _size-lg       | data-modifier-size="lg"   |
+| size-xl    | class-size-xl<br/>data-size-xl     | _size-xl       | data-modifier-size="xl"   |
+| size-xxl   | class-size-xxl<br/>data-size-xxl   | _size-xxl      | data-modifier-size="xxl"  |
 
 ### State
 
