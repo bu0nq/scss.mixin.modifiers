@@ -1,6 +1,6 @@
 {
   "name": "@bu0nq/scss.mixin.modifiers",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Package for integrating SCSS.Mixin.Modifiers",
   "main": "modifiers.scss",
   "scripts": {
