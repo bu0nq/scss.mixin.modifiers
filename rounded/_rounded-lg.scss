@@ -2,14 +2,26 @@
 
 @mixin rounded-lg($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-lg {
+    @include class-rounded-lg {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="lg"]) {
+    @include data-rounded-lg {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-lg {
+  &_rounded-lg {
+    @content;
+  }
+}
+
+@mixin data-rounded-lg {
+  &:is([data-modifier-rounded="lg"]) {
+    @content;
   }
 }

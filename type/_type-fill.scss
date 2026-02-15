@@ -1,0 +1,27 @@
+@use "../variables";
+
+@mixin type-fill($is-class-modifier: variables.$is-class-modifier-type, $is-data-modifier: variables.$is-data-modifier-type) {
+  @if $is-class-modifier {
+    @include class-type-fill {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    @include data-type-fill {
+      @content;
+    }
+  }
+}
+
+@mixin class-type-fill {
+  &_type-filled {
+    @content;
+  }
+}
+
+@mixin data-type-fill {
+  &:is([data-modifier-type="fill"]) {
+    @content;
+  }
+}

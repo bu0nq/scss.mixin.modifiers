@@ -2,14 +2,26 @@
 
 @mixin rounded-sm($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-sm {
+    @include class-rounded-sm {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="sm"]) {
+    @include data-rounded-sm {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-sm {
+  &_rounded-sm {
+    @content;
+  }
+}
+
+@mixin data-rounded-sm {
+  &:is([data-modifier-rounded="sm"]) {
+    @content;
   }
 }

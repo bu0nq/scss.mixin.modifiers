@@ -2,14 +2,26 @@
 
 @mixin size-base($is-class-modifier: variables.$is-class-modifier-size, $is-data-modifier: variables.$is-data-modifier-size) {
   @if $is-class-modifier {
-    &_size-base {
+    @include class-size-base {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-size="base"]) {
+    @include data-size-base {
       @content;
     }
+  }
+}
+
+@mixin class-size-base {
+  &_size-base {
+    @content;
+  }
+}
+
+@mixin data-size-base {
+  &:is([data-modifier-size="base"]) {
+    @content;
   }
 }
