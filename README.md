@@ -96,6 +96,16 @@ Modifiers for changing the size of a block or element.
 | size-xl    | class-size-xl<br/>data-size-xl     | _size-xl       | data-modifier-size="xl"   |
 | size-xxl   | class-size-xxl<br/>data-size-xxl   | _size-xxl      | data-modifier-size="xxl"  |
 
+### Type
+
+Modifiers for changing the type of block or element.
+
+| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier (Optional)     |
+|--------------|------------------------------------------|----------------|------------------------------|
+| type-fill    | class-type-fill<br/>data-type-fill       | _type-fill     | data-modifier-type="fill"    |
+| type-outline | class-type-outline<br/>data-type-outline | _type-outline  | data-modifier-type="outline" |
+| type-text    | class-type-text<br/>data-type-text       | _type-text     | data-modifier-type="text"    |
+
 ### State
 
 Modifiers for changing the state of a block or element.

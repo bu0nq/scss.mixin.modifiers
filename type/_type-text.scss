@@ -1,0 +1,27 @@
+@use "../variables";
+
+@mixin type-text($is-class-modifier: variables.$is-class-modifier-type, $is-data-modifier: variables.$is-data-modifier-type) {
+  @if $is-class-modifier {
+    @include class-type-text {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    @include data-type-text {
+      @content;
+    }
+  }
+}
+
+@mixin class-type-text {
+  &_type-text {
+    @content;
+  }
+}
+
+@mixin data-type-text {
+  &:is([data-modifier-type="text"]) {
+    @content;
+  }
+}
