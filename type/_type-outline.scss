@@ -1,0 +1,27 @@
+@use "../variables";
+
+@mixin type-outline($is-class-modifier: variables.$is-class-modifier-type, $is-data-modifier: variables.$is-data-modifier-type) {
+  @if $is-class-modifier {
+    @include class-type-outline {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    @include data-type-outline {
+      @content;
+    }
+  }
+}
+
+@mixin class-type-outline {
+  &_type-outline {
+    @content;
+  }
+}
+
+@mixin data-type-outline {
+  &:is([data-modifier-type="outline"]) {
+    @content;
+  }
+}

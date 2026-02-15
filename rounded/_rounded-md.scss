@@ -2,14 +2,26 @@
 
 @mixin rounded-md($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-md {
+    @include class-rounded-md {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="md"]) {
+    @include data-rounded-md {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-md {
+  &_rounded-md {
+    @content;
+  }
+}
+
+@mixin data-rounded-md {
+  &:is([data-modifier-rounded="md"]) {
+    @content;
   }
 }

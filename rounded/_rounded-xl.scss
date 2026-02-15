@@ -2,14 +2,26 @@
 
 @mixin rounded-xl($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-xl {
+    @include class-rounded-xl {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="xl"]) {
+    @include data-rounded-xl {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-xl {
+  &_rounded-xl {
+    @content;
+  }
+}
+
+@mixin data-rounded-xl {
+  &:is([data-modifier-rounded="xl"]) {
+    @content;
   }
 }

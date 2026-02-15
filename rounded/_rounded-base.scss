@@ -2,14 +2,26 @@
 
 @mixin rounded-base($is-class-modifier: variables.$is-class-modifier-rounded, $is-data-modifier: variables.$is-data-modifier-rounded) {
   @if $is-class-modifier {
-    &_rounded-base {
+    @include class-rounded-base {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-rounded="base"]) {
+    @include data-rounded-base {
       @content;
     }
+  }
+}
+
+@mixin class-rounded-base {
+  &_rounded-base {
+    @content;
+  }
+}
+
+@mixin data-rounded-base {
+  &:is([data-modifier-rounded="base"]) {
+    @content;
   }
 }

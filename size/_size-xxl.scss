@@ -2,14 +2,26 @@
 
 @mixin size-xxl($is-class-modifier: variables.$is-class-modifier-size, $is-data-modifier: variables.$is-data-modifier-size) {
   @if $is-class-modifier {
-    &_size-xxl {
+    @include class-size-xxl {
       @content;
     }
   }
 
   @if $is-data-modifier {
-    &:is([data-modifier-size="xxl"]) {
+    @include data-size-xxl {
       @content;
     }
+  }
+}
+
+@mixin class-size-xxl {
+  &_size-xxl {
+    @content;
+  }
+}
+
+@mixin data-size-xxl {
+  &:is([data-modifier-size="xxl"]) {
+    @content;
   }
 }
