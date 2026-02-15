@@ -100,12 +100,12 @@ Modifiers for changing the size of a block or element.
 
 Modifiers for changing the type of block or element.
 
-| Mixin Name    | Additional mixins                         | Class Modifier | Data Modifier (Optional)      |
-|---------------|-------------------------------------------|----------------|-------------------------------|
-| type-default  | class-type-default<br/>data-type-default  | _type-default  | data-modifier-type="default"  |
-| type-fill     | class-type-fill<br/>data-type-fill        | _type-fill     | data-modifier-type="fill"     |
-| type-outline  | class-type-outline<br/>data-type-outline  | _type-outline  | data-modifier-type="outline"  |
-| type-text     | class-type-text<br/>data-type-text        | _type-text     | data-modifier-type="text"     |
+| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier (Optional)     |
+|--------------|------------------------------------------|----------------|------------------------------|
+| type-base    | class-type-base<br/>data-type-base       | _type-base     | data-modifier-type="base"    |
+| type-fill    | class-type-fill<br/>data-type-fill       | _type-fill     | data-modifier-type="fill"    |
+| type-outline | class-type-outline<br/>data-type-outline | _type-outline  | data-modifier-type="outline" |
+| type-text    | class-type-text<br/>data-type-text       | _type-text     | data-modifier-type="text"    |
 
 ### State
 

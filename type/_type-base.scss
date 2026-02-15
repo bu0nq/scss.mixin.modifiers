@@ -1,0 +1,27 @@
+@use "../variables";
+
+@mixin type-base($is-class-modifier: variables.$is-class-modifier-type, $is-data-modifier: variables.$is-data-modifier-type) {
+  @if $is-class-modifier {
+    @include class-type-base {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    @include data-type-base {
+      @content;
+    }
+  }
+}
+
+@mixin class-type-base {
+  &_type-base {
+    @content;
+  }
+}
+
+@mixin data-type-base {
+  &:is([data-modifier-type="base"]) {
+    @content;
+  }
+}
