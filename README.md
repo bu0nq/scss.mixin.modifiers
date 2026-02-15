@@ -28,9 +28,11 @@ or
   $is-class-modifier: true,
   $is-class-modifier-rounded: true,
   $is-class-modifier-size: true,
+  $is-class-modifier-type: true,
   $is-data-modifier: true,
   $is-data-modifier-rounded: true,
-  $is-data-modifier-size: true
+  $is-data-modifier-size: true,
+  $is-data-modifier-type: true
 );
 
 @use "@bu0nq/scss.mixin.modifiers/modifiers";
