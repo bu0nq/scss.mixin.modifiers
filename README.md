@@ -38,36 +38,6 @@ or
 @use "@bu0nq/scss.mixin.modifiers/modifiers";
 ```
 
-### Examples
-
-```scss
-.example {
-    @include modifiers.rounded-base {
-        border-radius: 12px;
-    }
-}
-
-.example_rounded-base {
-    border-radius: 12px;
-}
-```
-
-```scss
-.example {
-    @include modifiers.rounded-base(true) {
-        border-radius: 12px;
-    }
-}
-
-.example_rounded-base {
-    border-radius: 12px;
-}
-
-.example[data-modifier-rounded="base"] {
-    border-radius: 12px;
-}
-```
-
 ### Rounded
 
 Modifiers for changing the rounding of a block or element.
@@ -84,6 +54,36 @@ Modifiers for changing the rounding of a block or element.
 | rounded-xl   | class-rounded-xl<br/>data-rounded-xl     | _rounded-xl    | data-modifier-rounded="xl"    |
 | rounded-xxl  | class-rounded-xxl<br/>data-rounded-xxl   | _rounded-xxl   | data-modifier-rounded="xxl"   |
 
+```scss
+.example {
+    @include modifiers.rounded-base {
+        border-radius: 12px;
+    }
+    
+    @include modifiers.rounded-lg {
+        border-radius: 16px;
+    }
+}
+
+// Result
+
+.example_rounded-base {
+    border-radius: 12px;
+}
+
+.example[data-modifier-rounded="base"] {
+    border-radius: 12px;
+}
+
+.example_rounded-lg {
+    border-radius: 16px;
+}
+
+.example[data-modifier-rounded="lg"] {
+    border-radius: 16px;
+}
+```
+
 ### Size
 
 Modifiers for changing the size of a block or element.
@@ -98,6 +98,48 @@ Modifiers for changing the size of a block or element.
 | size-xl    | class-size-xl<br/>data-size-xl     | _size-xl       | data-modifier-size="xl"   |
 | size-xxl   | class-size-xxl<br/>data-size-xxl   | _size-xxl      | data-modifier-size="xxl"  |
 
+```scss
+.example {
+    @include modifiers.size-base {
+        height: 40px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    @include modifiers.size-lg {
+        height: 48px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+}
+
+// Result
+
+.example_size-base {
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.example[data-modifier-size="base"] {
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.example_size-lg {
+    height: 48px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.example[data-modifier-size="lg"] {
+    height: 48px;
+    line-height: 24px;
+    font-size: 16px;
+}
+```
+
 ### Type
 
 Modifiers for changing the type of block or element.
@@ -109,6 +151,41 @@ Modifiers for changing the type of block or element.
 | type-outline | class-type-outline<br/>data-type-outline | _type-outline  | data-modifier-type="outline" |
 | type-text    | class-type-text<br/>data-type-text       | _type-text     | data-modifier-type="text"    |
 
+```scss
+.example {
+    @include modifiers.type-base {
+        background-color: hsl(0, 0%, 5%);
+        border-color: transparent;
+    }
+
+    @include modifiers.type-outline {
+        background-color: transparent;
+        border-color: hsl(0, 0%, 5%);
+    }
+}
+
+// Result
+
+.example_type-base {
+    background-color: hsl(0, 0%, 5%);
+    border-color: transparent;
+}
+
+.example[data-modifier-type="base"] {
+    background-color: hsl(0, 0%, 5%);
+    border-color: transparent;
+}
+
+.example_type-outline {
+    background-color: transparent;
+    border-color: hsl(0, 0%, 5%);
+}
+
+.example[data-modifier-type="outline"] {
+    background-color: transparent;
+    border-color: hsl(0, 0%, 5%);
+}
+```
 ### State
 
 Modifiers for changing the state of a block or element.
