@@ -148,6 +148,7 @@ Modifiers for changing the type of block or element.
 |--------------|------------------------------------------|----------------|------------------------------|
 | type-base    | class-type-base<br/>data-type-base       | _type-base     | data-modifier-type="base"    |
 | type-fill    | class-type-fill<br/>data-type-fill       | _type-fill     | data-modifier-type="fill"    |
+| type-icon    | class-type-icon<br/>data-type-icon       | _type-icon     | data-modifier-type="icon"    |
 | type-outline | class-type-outline<br/>data-type-outline | _type-outline  | data-modifier-type="outline" |
 | type-text    | class-type-text<br/>data-type-text       | _type-text     | data-modifier-type="text"    |
 
