@@ -1,0 +1,27 @@
+@use "../variables";
+
+@mixin type-icon($is-class-modifier: variables.$is-class-modifier-type, $is-data-modifier: variables.$is-data-modifier-type) {
+  @if $is-class-modifier {
+    @include class-type-icon {
+      @content;
+    }
+  }
+
+  @if $is-data-modifier {
+    @include data-type-icon {
+      @content;
+    }
+  }
+}
+
+@mixin class-type-icon {
+  &_type-icon {
+    @content;
+  }
+}
+
+@mixin data-type-icon {
+  &:is([data-modifier-type="icon"]) {
+    @content;
+  }
+}
