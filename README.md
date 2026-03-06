@@ -42,17 +42,17 @@ or
 
 Modifiers for changing the rounding of a block or element.
 
-| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier (Optional)      |
-|--------------|------------------------------------------|----------------|-------------------------------|
-| rounded-auto | class-rounded-auto<br/>data-rounded-auto | _rounded-auto  | data-modifier-rounded="auto"  |
-| rounded-none | class-rounded-none<br/>data-rounded-none | _rounded-none  | data-modifier-rounded="none"  |
-| rounded-xs   | class-rounded-xs<br/>data-rounded-xs     | _rounded-xs    | data-modifier-rounded="xs"    |
-| rounded-sm   | class-rounded-sm<br/>data-rounded-sm     | _rounded-sm    | data-modifier-rounded="sm"    |
-| rounded-md   | class-rounded-md<br/>data-rounded-md     | _rounded-md    | data-modifier-rounded="md"    |
-| rounded-base | class-rounded-base<br/>data-rounded-base | _rounded-base  | data-modifier-rounded="base"  |
-| rounded-lg   | class-rounded-lg<br/>data-rounded-lg     | _rounded-lg    | data-modifier-rounded="lg"    |
-| rounded-xl   | class-rounded-xl<br/>data-rounded-xl     | _rounded-xl    | data-modifier-rounded="xl"    |
-| rounded-xxl  | class-rounded-xxl<br/>data-rounded-xxl   | _rounded-xxl   | data-modifier-rounded="xxl"   |
+| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier                |
+|--------------|------------------------------------------|----------------|------------------------------|
+| rounded-auto | class-rounded-auto<br/>data-rounded-auto | _rounded-auto  | data-modifier-rounded="auto" |
+| rounded-none | class-rounded-none<br/>data-rounded-none | _rounded-none  | data-modifier-rounded="none" |
+| rounded-xs   | class-rounded-xs<br/>data-rounded-xs     | _rounded-xs    | data-modifier-rounded="xs"   |
+| rounded-sm   | class-rounded-sm<br/>data-rounded-sm     | _rounded-sm    | data-modifier-rounded="sm"   |
+| rounded-md   | class-rounded-md<br/>data-rounded-md     | _rounded-md    | data-modifier-rounded="md"   |
+| rounded-base | class-rounded-base<br/>data-rounded-base | _rounded-base  | data-modifier-rounded="base" |
+| rounded-lg   | class-rounded-lg<br/>data-rounded-lg     | _rounded-lg    | data-modifier-rounded="lg"   |
+| rounded-xl   | class-rounded-xl<br/>data-rounded-xl     | _rounded-xl    | data-modifier-rounded="xl"   |
+| rounded-xxl  | class-rounded-xxl<br/>data-rounded-xxl   | _rounded-xxl   | data-modifier-rounded="xxl"  |
 
 ```scss
 .example {
@@ -88,7 +88,7 @@ Modifiers for changing the rounding of a block or element.
 
 Modifiers for changing the size of a block or element.
 
-| Mixin Name | Additional mixins                  | Class Modifier | Data Modifier (Optional)  |
+| Mixin Name | Additional mixins                  | Class Modifier | Data Modifier             |
 |------------|------------------------------------|----------------|---------------------------|
 | size-xs    | class-size-xs<br/>data-size-xs     | _size-xs       | data-modifier-size="xs"   |
 | size-sm    | class-size-sm<br/>data-size-sm     | _size-sm       | data-modifier-size="sm"   |
@@ -144,7 +144,7 @@ Modifiers for changing the size of a block or element.
 
 Modifiers for changing the type of block or element.
 
-| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier (Optional)     |
+| Mixin Name   | Additional mixins                        | Class Modifier | Data Modifier                |
 |--------------|------------------------------------------|----------------|------------------------------|
 | type-base    | class-type-base<br/>data-type-base       | _type-base     | data-modifier-type="base"    |
 | type-fill    | class-type-fill<br/>data-type-fill       | _type-fill     | data-modifier-type="fill"    |

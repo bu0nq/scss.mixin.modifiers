@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../../variables";
 
 @mixin size-base($is-class-modifier: variables.$is-class-modifier-size, $is-data-modifier: variables.$is-data-modifier-size) {
   @if $is-class-modifier {
