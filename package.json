@@ -1,6 +1,6 @@
 {
   "name": "@bu0nq/scss.mixin.modifiers",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Package for integrating SCSS.Mixin.Modifiers",
   "main": "modifiers.scss",
   "scripts": {
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/bu0nq/scss.mixin.modifiers.git"
   },
   "keywords": [
+    "bem",
     "scss",
     "mixins",
     "modifiers"
